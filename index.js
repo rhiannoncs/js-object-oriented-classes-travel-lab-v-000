@@ -23,5 +23,11 @@ class Route {
     const horizontalTravelled = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal));
     
     return verticalTravelled + horizontalTravelled;
-    }
+  }
+  
+  estimatedTime () {
+    
+  }
+    
+    
 }
