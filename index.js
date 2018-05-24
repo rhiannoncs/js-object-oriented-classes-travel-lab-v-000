@@ -20,7 +20,9 @@ class Route {
     
     const verticalTravelled = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical);
     
-    const horizontalTravelled = Math.abs(eastWest.index)
+    const horizontalTravelled = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal));
+    
+    return verticalTravelled + horizontalTravelled;
     
     
     
