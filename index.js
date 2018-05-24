@@ -1,10 +1,10 @@
 class Driver {
   constructor(name, startDateAsString) {
     this.name = name;
-    this.startDateAsString = startDateAsString;
+    this.startDate = startDate(startDateAsString);
   }
   
-  startDate () {
+  startDate (startDateAsString) {
     const date =  new Date(startDateAsString);
     this.startDate = date;
   }
